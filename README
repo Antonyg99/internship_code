@@ -1,0 +1,14 @@
+
+usage:
+	make clean
+	make
+	make run
+
+sr.c -- A Linux program that sends and recieves via a C1 message to the fifo
+		 -- Prints a message when it sends or recieves data, and a dot if hwread returns 0 bytes
+
+hw.h -- the hardware interface
+
+hw.c -- A program that simulates the fifo loopback, returning data on
+        every 10th hwread
+ 		 -- replace with real hardware
